@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*초기화*/
+*{margin:0; padding:0;}
+ul {list-style:none;}
+a {text-decoration:none; color:inherit;}
+address {font-style:normal;}
+small {font-size:1em;}
+body {font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+/*헤더*/
+.header {
+    width:1000px;
+    height:160px;
+    margin:0 auto;
+    position:relative;
+}
+.header > h1 {
+    padding-top:54.5px;
+}
+.header .member {
+    position:absolute;
+    top:20px;
+    right:0;
+}
+.header .member li {
+    float:left;
+    padding:0 10px;
+    font-size:14px;
+}
+.header .member li:last-child a::before {
+    content:"|";
+    padding-right:10px;
+}
+.header .lnb {
+    position:absolute;
+    bottom:60px;
+    right:0;
+}
+.header .lnb li {
+    float:left;
+    margin-left:30px;
+    text-transform:uppercase; /* 소문자 -> 대문자 변경 */
+}
+.header .lnb li a:hover {
+    color:orange;
+}
+
+/*서브이미지*/
+.sub_img {
+    height:160px;
+    background:url(images/sub_img.jpg) no-repeat center top/cover;
+}
+.sub_img span {
+    display:block;
+    width:1000px;
+    margin:0 auto;
+    background-color:rgba(0,0,0,0.5);
+    text-align:right;
+    line-height:160px;
+    color:#fff;
+    font-size:3rem;
+    text-transform:uppercase;
+}
+/*본문*/
+.contents {
+    width:1000px;
+    margin:30px auto 0;
+    overflow:hidden;
+}
+.submenu {
+    width:250px;
+    float:left;
+}
+.submenu h2 {
+    width:250px;
+    height:95px;
+    background-color:#333;
+    color:#fff;
+    font-size:2em;
+    text-align:center;
+    line-height:95px;
+    text-transform:uppercase;
+}
+.submenu ul{
+    padding-top:20px;
+}
+.submenu ul li a{
+    display:block;
+    height:49px;
+    border-bottom:1px solid navy;
+    color:navy;
+    /* text-indent:20px; */
+    padding-left:20px;
+    line-height:49px;
+    background:url(images/snb_bullet.gif) no-repeat 230px center;
+}
+.submenu ul li a:hover {
+    background:url(images/snb_bullet_1.gif) no-repeat 230px center;
+    color:orange;
+}
+.subCon {
+    width:710px;
+    float:right;
+}
+.subCon h3 {
+    font-size:3rem;
+    font-family:"Time News Roman", serif;
+    color:#ccc;
+}
+.subCon figure {
+    float:right;
+    text-align:center;
+    color:gray;
+}
+.subCon p {
+    margin:0 0 20px 10px;
+}
+.subCon p:last-child {margin-bottom:0;}
+/*푸터*/
+.footerWrap {
+    border-top:1px solid #ddd;
+    margin-top:50px;
+}
+.footer {
+    width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+    padding:20px 0;
+}
+.footer .left {
+    float:left;
+    font-size:0.8em;
+}
+.footer .sns {
+    float:right;
+}
+.footer .sns li {
+    float:left;
+}
+.footer .sns li a {
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(images/bg_sns.png) no-repeat;
+    margin-left:20px;
+    text-align:-9999em;
+}
+.footer .sns li:last-child a {
+    background-position:-50px 0;
+}
